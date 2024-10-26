@@ -40,7 +40,7 @@ class TestAllEndpoints(TestCase):
 
     def test_people_schema(self):
         self.assertEqual(
-            self.get_query("/api/people/schema").status_code, 200)
+            self.get_query("/api/people/schema/").status_code, 200)
 
     def test_people_search(self):
         response = self.get_query("/api/people/?search=r2")
@@ -59,7 +59,7 @@ class TestAllEndpoints(TestCase):
 
     def test_planets_schema(self):
         self.assertEqual(
-            self.get_query("/api/planets/schema").status_code, 200)
+            self.get_query("/api/planets/schema/").status_code, 200)
 
     def test_planets_search(self):
         response = self.get_query("/api/planets/?search=yavin")
@@ -78,7 +78,7 @@ class TestAllEndpoints(TestCase):
 
     def test_films_schema(self):
         self.assertEqual(
-            self.get_query("/api/films/schema").status_code, 200)
+            self.get_query("/api/films/schema/").status_code, 200)
 
     def test_films_search(self):
         response = self.get_query("/api/films/?search=sith")
@@ -97,7 +97,7 @@ class TestAllEndpoints(TestCase):
 
     def test_starship_schema(self):
         self.assertEqual(
-            self.get_query("/api/starships/schema").status_code, 200)
+            self.get_query("/api/starships/schema/").status_code, 200)
 
     def test_starship_search(self):
         response = self.get_query("/api/starships/?search=x1")
@@ -116,7 +116,7 @@ class TestAllEndpoints(TestCase):
 
     def test_vehicle_schema(self):
         self.assertEqual(
-            self.get_query("/api/vehicles/schema").status_code, 200)
+            self.get_query("/api/vehicles/schema/").status_code, 200)
 
     def test_vehicle_search(self):
         response = self.get_query("/api/vehicles/?search=crawler")
@@ -135,7 +135,7 @@ class TestAllEndpoints(TestCase):
 
     def test_species_schema(self):
         self.assertEqual(
-            self.get_query("/api/species/schema").status_code, 200)
+            self.get_query("/api/species/schema/").status_code, 200)
 
     def test_species_search(self):
         response = self.get_query("/api/species/?search=calamari")
